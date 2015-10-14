@@ -1,0 +1,20 @@
+
+.stylish {
+	margin-top: 20px;
+	font-family:Times;
+	font-size:14px;
+	margin-left:56px;
+}
+
+#mini {
+	font-family:Times;
+	font-size:14px;
+	margin-left:56px;
+}
+
+.line {
+	height: 1px;
+	background-color: #7a7a7a;
+	margin:0 auto;
+	width:450px;
+}
