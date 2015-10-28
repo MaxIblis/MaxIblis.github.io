@@ -2,3 +2,19 @@
   margin: 0;
   padding: 0;
 }
+
+.header{
+  width: 966px;
+  margin-left: 46px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border: 2px solid black;
+}
+
+li{
+  display: inline-block;
+  height: 40px;
+  font-family: 'Open Sans', sans-serif;
+
+  background-color: grey;
+}
