@@ -97,10 +97,10 @@ li:nth-child(4) a{
 }
 
 .menu_footerul li:first-child a{
-        padding: 10px 65px 11px 24px;
-        text-decoration: none;
-        color: black;
-        display:block;
+    padding: 10px 65px 11px 24px;
+    text-decoration: none;
+    color: black;
+    display:block;
 }
 
 .menu_footerul li:nth-child(2) a{
@@ -132,3 +132,11 @@ li:nth-child(4) a{
     font-size: 14px;
     color: black;
 }
+
+.menu_footerul li a:hover{
+    text-decoration: underline;
+}
+
+.menu_footerul li a:active{
+    color: white;
+    background-color: black;
