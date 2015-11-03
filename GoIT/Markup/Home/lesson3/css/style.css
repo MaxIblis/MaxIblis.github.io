@@ -10,7 +10,7 @@ body{
 }
 
 #full	{
-  clean: both;
+  clear: both;
   height: 966px;
   border-left: 1px solid #c8c8c8;
   border-right: 1px solid #c8c8c8;
@@ -29,7 +29,7 @@ body{
   width:966px;
 	background: linear-gradient(to top, #454444, #5e5e5e);
 	height:40px;
-  margin-left: 46px;
+  	margin-left: 46px;
 	}
 
 .menu_topul{
