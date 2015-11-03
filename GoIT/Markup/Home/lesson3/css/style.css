@@ -26,57 +26,33 @@ body{
 /*Top menu*/
 
 .top_menu {
-  width:966px;
-	background: linear-gradient(to top, #454444, #5e5e5e);
-	height:40px;
+    width:966px;
+  	background: linear-gradient(to top, #454444, #5e5e5e);
+  	height:40px;
   	margin-left: 46px;
 	}
 
-.menu_topul{
-   list-style:none;
+.top_menu li{
+  display: inline-block;
+  float: left;
+  line-height: 40px;
 }
 
-.top_menu li{
-  float: left;
+.top_menu li a{
+  display: block;
+  text-decoration: none;
   font-size: 14px;
   color: white;
+  padding: 0 30px;
 }
 
-.firstchild{
-    padding: 10px 65px 11px 24px;
-    text-decoration: none;
-    color: white;
-    vertical-align: top;
-    display:block;
-}
-
-.secondchild{
-    padding: 10px 24px 11px 24px;
-    text-decoration: none;
-    color: white;
-    display:block;
-}
-
-.thirdchild{
-    padding: 10px 65px 11px 65px;
-    text-decoration: none;
-    color: white;
-    display:block;
-}
-
-.fourthchild{
-    padding: 10px 65px 11px 24px;
-    text-decoration: none;
-    color: white;
-    display:block;
-}
-
-.menu_topul li:hover{
+.top_menu li:hover{
     color: white;
     background-color: black;
 }
 
-.menu_topul li:active{
+
+.top_menu li:active{
     color: white;
     background-color: black;
 }
