@@ -37,7 +37,6 @@ body{
 }
 
 .top_menu li{
-  padding: 10px 0 11px 0;
   float: left;
   font-size: 14px;
   color: white;
@@ -47,6 +46,7 @@ body{
     padding: 10px 65px 11px 24px;
     text-decoration: none;
     color: white;
+    vertical-align: top;
     display:block;
 }
 
