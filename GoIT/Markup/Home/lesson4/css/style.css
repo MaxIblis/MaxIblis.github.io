@@ -4,42 +4,111 @@
 }
 
 body {
-   width: 1349px;
-   height: 1024px;
    background-image: url(../img/background.png);
+   font-family: Tahoma;
 
 }
 
 .copyright{
-   font-family: Tahoma;
    font-size: 12px;*/
 }
 
-   .wrapper{
-      width: 1024px;
-      margin: 0 auto;
-      border: 1px solid #000;
-   }
+.wrapper{
+   width: 1024px;
+   margin: 0 auto;
+   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
 
 .header{
-   border: 1px solid #000;
    height: 175px;
    background-color: white;
 }
 .adv{
-   border: 1px solid #000;
    height: 235px;
-   background-image: url(../img/photo.png);
-   background-size: 1024px 235px;
+   background: url(../img/photo.png) 100% 100%;
+   background-size: cover;
+   z-index: 4;
+}
+
+.line{
+   height: 1px;
+	background-color: #138aa7;
+}
+
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  width: 100%;
 }
 
 .menu{
-   border: 1px solid #000;
    height: 30px;
+   background: rgba(55,55,55,1);
+   background: -moz-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(55,55,55,1)), color-stop(100%, rgba(48,48,48,1)));
+   background: -webkit-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+   background: -o-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+   background: -ms-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+   background: linear-gradient(to bottom, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030', GradientType=0 );
+   border-bottom: 1px solid #000;
+   border-top: 1px solid #cacbcb;
+   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+   z-index: 3;
+}
+
+.menu li{
+   position: relative;
+   list-style: none;
+   float: left;
+}
+
+.menu li a{
+   position: relative;
+   display: block;
+   text-decoration: none;
+   line-height: 30px;
+   font-size: 14px;
+   color: white;
+   padding: 0 40px;
+}
+
+.menu ul+a:after{
+   content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 30px;
+  height: 6px;
+  width: 5px;
+  background: url(../img/whitetriangle.png) 0 0 no-repeat;
+}
+
+.menu ul{
+  display: none;
+  position: absolute;
+  left: 30px;
+}
+
+.menu li:hover ul{
+   display: block;
+   top: 100%;
+   margin-top: 1px;
+}
+
+.menu ul li{
+  background: #303030;
+}
+
+.menu ul a {
+   padding: 0 10px;
 }
 
 .content{
-   border: 1px solid #000;
+   /*border: 1px solid #000;*/
    height: 546px;
 }
 
