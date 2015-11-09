@@ -113,7 +113,7 @@ body {
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030', GradientType=0 );
    border-bottom: 1px solid #000;
    border-top: 1px solid #cacbcb;
-   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+   box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
    z-index: 10;
 }
 
@@ -166,29 +166,61 @@ body {
 
 .droplist a{
    display: block;
-   width: 140px;
+   width: 120px;
    padding: 0 10px;
 }
 
-
+/*Способ с паддингм 2000*/
 .content{
+   width: 1024px;
+   overflow: hidden;
+   box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+   z-index: 5;
+}
+
+.left{
+   width: 204px;
+   float: left;
+   padding-left: 10px;
+   background: #edeef0;
+   border-left: 1px solid #c7cacf;
+   padding-bottom: 20000px;
+   margin-bottom: -20000px;
+}
+
+.center{
+   width: 571px;
+   float: left;
+   background: #ffffff;
+   padding-bottom: 20000px;
+   margin-bottom: -20000px;
+}
+
+.right{
+   width: 229px;
+   padding-left: 10px;
+   float: right;
+   background: #edeef0;
+   border-right: 1px solid #c7cacf;
+   padding-bottom: 20000px;
+   margin-bottom: -20000px;
+}
+
+/*Способ с фоновым рисунком*/
+/*.content{
    position: relative;
    height: 500px;
    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 
 }
 
-h3{
-   text-align:center;
-   margin-top: 5px;
-}
 
 .fon {
    width: 1024px;
    height: 534px;
    background: url(../img/content.png) repeat-y;
    float: left;
-   z-index: 1;
+   z-index: 5;
 }
 
 .leftColumn {
@@ -205,6 +237,11 @@ h3{
 .rightColumn {
    width: 225px;
    float: right;
+}*/
+
+h3{
+   text-align:center;
+   margin-top: 5px;
 }
 
 .footer{
