@@ -80,17 +80,18 @@ body {
 }
 
 .adv{
+   position: relative;
    height: 235px;
    background: url(../img/photo.png) 100% 100%;
    background-size: cover;
    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
-   z-index: 4;
+   z-index: 11;
 }
 
 .line{
    height: 1px;
 	background-color: #128aa7;
-   z-index: 7;
+   z-index: 12;
 }
 
 .clearfix:after{
@@ -102,6 +103,7 @@ body {
 }
 
 .menu{
+   position: relative;
    height: 30px;
    background: rgba(55,55,55,1);
    background: -moz-linear-gradient(top, rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%);
@@ -172,6 +174,7 @@ body {
 
 /*Способ с паддингм 2000*/
 .content{
+   position: relative;
    width: 1024px;
    line-height: 22px;
    overflow: hidden;
