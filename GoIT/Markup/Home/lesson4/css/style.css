@@ -117,13 +117,13 @@ body {
    z-index: 10;
 }
 
-.menu li{
+.listmenu{
    position: relative;
    list-style: none;
    float: left;
 }
 
-.menu li a{
+.listmenu a{
    position: relative;
    display: block;
    text-decoration: none;
@@ -145,38 +145,36 @@ body {
   background: url(../img/whitetriangle.png) 0 0 no-repeat;
 }
 
-.menu ul{
+.droplist{
   display: none;
+  list-style: none;
   position: absolute;
   left: 40px;
   z-index: 8;
 }
 
-.menu li:hover ul{
+.listmenu:hover ul{
    display: block;
    top: 100%;
    margin-top: 1px;
    box-shadow: 1px 7px 6px 3px rgba(0,0,0,0.75);
 }
 
-.menu ul li{
+.dropline{
   background: #303030;
 }
 
-.menu ul a{
+.droplist a{
    display: block;
+   width: 140px;
    padding: 0 10px;
 }
 
-/*.menu ul+a{
-   display: block;*/
-   /*padding: 0 10px;*/
-}
 
 .content{
    position: relative;
    height: 500px;
-   box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.75);
+   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -186,10 +184,10 @@ h3{
 }
 
 .fon {
-   overflow: hidden;
    width: 1024px;
    height: 534px;
-   background: url(../img/content.png) 0 0 repeat-y;
+   background: url(../img/content.png) repeat-y;
+   float: left;
    z-index: 1;
 }
 
