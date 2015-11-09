@@ -40,6 +40,45 @@ body {
    margin-left: 25px;
 }
 
+.contacts{
+   position: absolute;
+   top: 12px;
+   right: 30px;
+}
+
+.contacts p{
+   padding: 1px;
+   color: #128aa7;
+   font-size: 12px;
+}
+
+#contact{
+   font-weight: bold;
+}
+
+.header ul{
+   position: absolute;
+   right: 20px;
+   bottom: 10px;
+   text-decoration: none;
+   list-style: none;
+}
+
+.header ul li{
+   float: right;
+   margin-right: 5px;
+}
+
+.header li a{
+   display: block;
+   width: 54px;
+   height: 56px;
+   font-size: 10px;
+   text-align: center;
+
+
+}
+
 .adv{
    height: 235px;
    background: url(../img/photo.png) 100% 100%;
@@ -122,7 +161,6 @@ body {
 
 .menu ul li{
   background: #303030;
-  /*width: 84px;*/
 }
 
 .menu ul a{
