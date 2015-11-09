@@ -16,13 +16,30 @@ body {
 .wrapper{
    width: 1024px;
    margin: 0 auto;
-   /*box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);*/
 }
 
 .header{
+   position: relative;
    height: 175px;
    background-color: white;
+   box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
 }
+
+.textlogo{
+   position: absolute;
+   top: 100px;
+   left: 70px;
+   color: #128aa7;
+   font-size: 12px;
+}
+
+.logo{
+   position: absolute;
+   left: 0;
+   bottom: -3px;
+   margin-left: 25px;
+}
+
 .adv{
    height: 235px;
    background: url(../img/photo.png) 100% 100%;
@@ -33,7 +50,8 @@ body {
 
 .line{
    height: 1px;
-	background-color: #138aa7;
+	background-color: #128aa7;
+   z-index: 7;
 }
 
 .clearfix:after{
@@ -89,10 +107,9 @@ body {
 }
 
 .menu ul{
-  /*display: none;*/
+  display: none;
   position: absolute;
-  left: 30px;
-  box-shadow: 2px 6px 20px 0px rgba(0,0,0,0.75);
+  left: 40px;
   z-index: 8;
 }
 
@@ -100,31 +117,42 @@ body {
    display: block;
    top: 100%;
    margin-top: 1px;
+   box-shadow: 1px 7px 6px 3px rgba(0,0,0,0.75);
 }
 
 .menu ul li{
   background: #303030;
-  width: 84px;
+  /*width: 84px;*/
 }
 
 .menu ul a{
+   display: block;
    padding: 0 10px;
 }
 
+/*.menu ul+a{
+   display: block;*/
+   /*padding: 0 10px;*/
+}
+
 .content{
+   position: relative;
    height: 500px;
-   box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-   z-index: 3
+   box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.75);
+
 }
 
 h3{
    text-align:center;
+   margin-top: 5px;
 }
 
 .fon {
+   overflow: hidden;
    width: 1024px;
    height: 534px;
-   background: url(../img/content.png) repeat-y;
+   background: url(../img/content.png) 0 0 repeat-y;
+   z-index: 1;
 }
 
 .leftColumn {
@@ -139,7 +167,7 @@ h3{
 }
 
 .rightColumn {
-   width: 234px;
+   width: 225px;
    float: right;
 }
 
