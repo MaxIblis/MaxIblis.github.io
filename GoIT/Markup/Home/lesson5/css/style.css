@@ -2,3 +2,42 @@
    margin: 0;
    padding: 0;
 }
+
+body {
+
+}
+
+.wrapper{
+   /*background: url(../img/background.png);*/
+   width: 1216px;
+   height: 1062px;
+   margin: 0 auto;
+}
+
+.top_right_menu{
+   display: block;
+   list-style: none;
+   height: 36px;
+   width: 1215px;
+   background: url(../img/layer13.png);
+}
+
+.list1{
+   float: right;
+}
+
+.list1 a{
+   display: block;
+   line-height: 36px;
+   text-decoration: none;
+   padding: 10px;
+}
+
+.top_menu{
+   display: block;
+   list-style: none;
+}
+
+.list2{
+   float: right;
+}
