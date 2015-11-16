@@ -18,16 +18,18 @@ body {
   position: relative;
   height: 36px;
   width: 1215px;
-  background: url(../img/layer13.png);
+  /*background-color: #085596;*/
+  background: url(../img/noise.png);
 }
 
 .top_right_menu{
    display: block;
    list-style: none;
-
+   margin-right: 10px;
 }
 
 .list1{
+   display: block;
    float: right;
 }
 
@@ -35,38 +37,46 @@ body {
    display: block;
    line-height: 36px;
    text-decoration: none;
-   padding: 10px;
+   color: #fff;
+   padding: 0 10px;
 }
 
-/*.line{
-  position: absolute;
-  width: 1px;
-  background-color: white;
-  float: right;
-  margin: 50% auto;
-}*/
+.line{
+   float: right;
+   background: url(../img/line.png) repeat-y;
+   height: 32px;
+   width: 1px;
+   margin: 2px 8px;
+}
+
+.flag {
+   float: right;
+   margin-top: 6px;
+}
 
 .top_menu{
    display: block;
    list-style: none;
+
 }
 
 .list2{
   display: block;
   float: right;
+   line-height: 36px;
 }
 
-.border {
-  border-right: 1px solid white;
+.list2:hover{
+   background-color: #4eabda;
+   color: white;
 }
 
 .list2 a{
   display: block;
-  line-height: 36px;
-  /*margin-top: 3px;*/
+   font-size: 14px;
   text-decoration: none;
-  padding: 0 10px;
-  color: white;
+  padding: 0 15px;
+   color: #60b5ed;
 }
 
 .content{
