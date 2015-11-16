@@ -14,12 +14,17 @@ body {
    margin: 0 auto;
 }
 
+.menu{
+  position: relative;
+  height: 36px;
+  width: 1215px;
+  background: url(../img/layer13.png);
+}
+
 .top_right_menu{
    display: block;
    list-style: none;
-   height: 36px;
-   width: 1215px;
-   background: url(../img/layer13.png);
+
 }
 
 .list1{
@@ -33,11 +38,39 @@ body {
    padding: 10px;
 }
 
+/*.line{
+  position: absolute;
+  width: 1px;
+  background-color: white;
+  float: right;
+  margin: 50% auto;
+}*/
+
 .top_menu{
    display: block;
    list-style: none;
 }
 
 .list2{
-   float: right;
+  display: block;
+  float: right;
+}
+
+.border {
+  border-right: 1px solid white;
+}
+
+.list2 a{
+  display: block;
+  line-height: 36px;
+  /*margin-top: 3px;*/
+  text-decoration: none;
+  padding: 0 10px;
+  color: white;
+}
+
+.content{
+  width: 1216px;
+  height: 1026px;
+  background: url(../img/background.png) 0 0 no-repeat;
 }
