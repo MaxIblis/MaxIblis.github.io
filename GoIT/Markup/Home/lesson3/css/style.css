@@ -47,7 +47,7 @@ body{
 }
 
 .top_menu li:hover{
-    color: white;
+    color: red;
     background-color: black;
 }
 
