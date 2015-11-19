@@ -14,6 +14,14 @@
     font-style: normal;
 }
 
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  width: 100%;
+}
+
 body {
    font-family: "Helvetica Neue", Arial, serif;
 }
@@ -37,9 +45,58 @@ body {
    margin-right: 10px;
 }
 
+.right_top{
+   display: block;
+   float: right;
+   padding: 0 10px;
+   color:white;
+   font-size: 14px;
+   line-height: 35px;
+   background: rgba(81,176,220,1);
+   background: -moz-linear-gradient(top, rgba(81,176,220,1) 0%, rgba(58,141,205,1) 50%, rgba(58,141,205,1) 51%, rgba(50,127,199,1) 71%, rgba(46,121,196,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(81,176,220,1)), color-stop(50%, rgba(58,141,205,1)), color-stop(51%, rgba(58,141,205,1)), color-stop(71%, rgba(50,127,199,1)), color-stop(100%, rgba(46,121,196,1)));
+   background: -webkit-linear-gradient(top, rgba(81,176,220,1) 0%, rgba(58,141,205,1) 50%, rgba(58,141,205,1) 51%, rgba(50,127,199,1) 71%, rgba(46,121,196,1) 100%);
+   background: -o-linear-gradient(top, rgba(81,176,220,1) 0%, rgba(58,141,205,1) 50%, rgba(58,141,205,1) 51%, rgba(50,127,199,1) 71%, rgba(46,121,196,1) 100%);
+   background: -ms-linear-gradient(top, rgba(81,176,220,1) 0%, rgba(58,141,205,1) 50%, rgba(58,141,205,1) 51%, rgba(50,127,199,1) 71%, rgba(46,121,196,1) 100%);
+   background: linear-gradient(to bottom, rgba(81,176,220,1) 0%, rgba(58,141,205,1) 50%, rgba(58,141,205,1) 51%, rgba(50,127,199,1) 71%, rgba(46,121,196,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51b0dc', endColorstr='#2e79c4', GradientType=0 );
+   position: relative;
+   border-bottom: 1px solid #4299d2;
+   border-top-color: #64a8e3;
+}
+
+.right_top:before,
+.right_top:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    width: 1px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#64a8e3), to(#4299d2));
+    background-image: -webkit-linear-gradient(#64a8e3, #4299d2);
+    background-image: -moz-linear-gradient(#64a8e3, #4299d2);
+    background-image: -o-linear-gradient(#64a8e3, #4299d2);
+    background-image: linear-gradient(#64a8e3, #4299d2);
+}
+
+.right_top:after {
+    left: auto;
+    right: -1px;
+}
+
+.right_top a{
+   color:white;
+}
+
+.right_top a:hover{
+   text-decoration: none;
+}
+
 .list1{
    display: block;
    float: right;
+   font-size: 14px;
 }
 
 .list1 a{
@@ -128,12 +185,15 @@ body {
    background-color: rgba(15, 15, 15, 0.8);
 }
 
-.facebk{
-   position: absolute;
-   width: 257px;
+.link{
+   display: block;
+   width: 255px;
    height: 34px;
-   top: 38px;
+   top: 35px;
    left: 151px;
+   line-height: 34px;
+   text-decoration: none;
+   font-size: 14px;
    background: rgba(63,87,147,1);
    background: -moz-linear-gradient(top, rgba(63,87,147,1) 0%, rgba(50,80,146,1) 50%, rgba(50,80,146,1) 51%, rgba(50,72,132,1) 71%, rgba(55,65,101,1) 100%);
    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(63,87,147,1)), color-stop(50%, rgba(50,80,146,1)), color-stop(51%, rgba(50,80,146,1)), color-stop(71%, rgba(50,72,132,1)), color-stop(100%, rgba(55,65,101,1)));
@@ -142,17 +202,81 @@ body {
    background: -ms-linear-gradient(top, rgba(63,87,147,1) 0%, rgba(50,80,146,1) 50%, rgba(50,80,146,1) 51%, rgba(50,72,132,1) 71%, rgba(55,65,101,1) 100%);
    background: linear-gradient(to bottom, rgba(63,87,147,1) 0%, rgba(50,80,146,1) 50%, rgba(50,80,146,1) 51%, rgba(50,72,132,1) 71%, rgba(55,65,101,1) 100%);
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f5793', endColorstr='#374165', GradientType=0 );
-   border-top: 1px solid #7788b4;
+   border-top: 1px solid #7789b7;
+   border-radius: 5px;
 }
 
-.facebk a{
+
+.buttons{
+   width: 256px;
+   padding-top: 36px;
+   margin: 0 auto;
+}
+
+.facebook{
+   float: left;
+}
+
+.facebook::after{
+   content: '';
+   display: inline-block;
+   height: 35px;
+   margin-top: -1px;
+   border-left: 1px solid #203a75;
+   border-right: 1px solid #4e63a2;
+}
+
+.login{
+   position: absolute;
    line-height: 34px;
-   font-size: 14px;
-   text-align: center;
+   color: white;
+   padding-left: 70px;
+   text-decoration: none;
 }
 
-a img{
-   border-right: 1px solid #1f3d71;
+.login::after{
+   content: '';
+   display: inline-block;
+   float: right;
+   height: 34px;
+   width: 8px;
+   margin-left: 20px;
+   background: url(../img/arrow.png) 0 0 no-repeat;
+}
+
+.OU{
+   height: 14px;
+   margin-top: 20px;
+}
+
+.or{
+   font-size: 14px;
+   color:#999999;
+}
+
+.or::before{
+   content: '';
+   display: inline-block;
+   width: 112px;
+   margin-right: 6px;
+   margin-bottom: 5px;
+   text-align: center;
+   border-top: 1px solid #666666;
+   -webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+   box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+}
+
+.or::after{
+   content: '';
+   display: inline-block;
+   width: 112px;
+   margin-left: 6px;
+   margin-bottom: 5px;
+   border-top: 1px solid #666666;
+   -webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
+   box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.75);
 }
 
 input{
@@ -162,7 +286,7 @@ input{
    font-size: 14px;
 }
 
-input:hover{
+.input:hover{
    background-color: #1b5288;
    border-bottom: 1px solid #689bcc;
    -webkit-box-shadow: 0px 0px 10px 2px rgba(96,154,198,1);
@@ -174,13 +298,13 @@ form{
    text-align: center;
 }
 .name_top{
-   width: 236px;
+   width: 234px;
    height: 35px;
    margin-bottom: 20px;
    padding-left: 20px;
    background-color: #0f0f0f;
    border-bottom: 1px solid grey;
-   margin-top:145px;
+   margin-top:24px;
 }
 
 .name{
@@ -209,22 +333,25 @@ form{
    -moz-box-shadow: 0px 0px 2px 1px rgba(107,184,231,1);
    box-shadow: 0px 0px 2px 1px rgba(107,184,231,1);
    border-radius: 2px;
-}
-
-.chk{
-
+   cursor: pointer;
 }
 
 .s{
    vertical-align: middle;
    text-align: left;
    margin-left: -30px;
+   cursor: pointer;
+}
+
+s:hover{
+   box-shadow: 0px 0px 0px 0px;
 }
 
 label{
    font-size: 14px;
    line-height: 14px;
    color: white;
+   cursor: pointer;
 }
 
 .bottom_text{

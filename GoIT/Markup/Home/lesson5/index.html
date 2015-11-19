@@ -9,7 +9,9 @@
       <div class="wrapper">
         <div class="menu">
              <ul class="top_right_menu">
-                <li class="list1"><a href="#" target="_blank">Ola! Entrar ou Cadastre-se</a></li>
+               <li class="right_top">
+                   <p>Ola! <a href="#" target="_blank">Entrar</a> ou <a href="#" target="_blank">Cadastre-se</a></p>
+               </li>
                 <li class="list1"><a href="#" target="_blank">Minhas Ofertas</a></li>
              </ul>
              <div class="flag"><img src="img/flag.png" alt="flag"></div>
@@ -28,21 +30,23 @@
                      <p>Cadastre-se</p>
                   </div>
                   <div class="bottom_window">
-                     <div class="facebk">
-                        <a href="#" target="_blank">
-                           <span><img src="img/Facebook.png" alt="facebook"></span>
-                           Login In with Facebook
-                        </a>
-                     </div>
-                     <div></div>
                      <form action="/">
-                        <div><input type="text" name="First_name" id="First_name" class="name_top" placeholder="First Name" required></div>
-                        <div><input type="text" name="Second_name" id="Second_name" class="name" placeholder="Last Name" required></div>
-                        <div><input type="email" name="email" id="email" class="name" placeholder="Email Address" required></div>
-                        <div><input type="password" name="pass" id="pass" class="name" placeholder="Choose Password" required></div>
-                        <div><input type="password" name="pass" id="pass" class="name" placeholder="Password Confirm" required></div>
+                        <div class="buttons clearfix">
+                           <a class= "link" href="#" target="_blank">
+                              <span class="facebook"><img src="img/facebook1.png" alt="facebook"></span>
+                              <p class="login"><strong>Login In</strong> with <strong>Facebook</strong></p>
+                           </a>
+                        </div>
+                        <div class="OU">
+                           <p class=or>OU</p>
+                        </div>
+                        <div><input type="text" name="First_name" id="First_name" class="name_top input" placeholder="First Name" required></div>
+                        <div><input type="text" name="Second_name" id="Second_name" class="name input" placeholder="Last Name" required></div>
+                        <div><input type="email" name="email" id="email" class="name input" placeholder="Email Address" required></div>
+                        <div><input type="password" name="pass" id="pass" class="name input" placeholder="Choose Password" required></div>
+                        <div><input type="password" name="pass" id="pass" class="name input" placeholder="Password Confirm" required></div>
                         <div><input type="checkbox" id="chkbox" class="s">
-                           <label for="chkbox">Send me Youbike updates and tips</label>
+                           <label for="chkbox" class="label">Send me Youbike updates and tips</label>
                         </div>
                         <div><input type="submit" value="Create my Account" class="submit"></div>
                      </form>
