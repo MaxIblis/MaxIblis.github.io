@@ -57,3 +57,77 @@
    background-image: -webkit-linear-gradient(#745083, #34263b);
    background-image: -o-linear-gradient(transparent, transparent);
 }
+
+.menu{
+   position: absolute;
+   width: 50%;
+   margin: auto;
+   top: 70px;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}
+
+/*.menu__button{
+   position: relative;
+   list-style: none;
+   text-align: center;
+
+}
+
+.menu__button a{
+   display: block;
+   height: 20px;
+   color: white;
+   line-height: 20px;
+}
+
+.menu__dropdown{
+   display:none;
+   list-style: none;
+   position: absolute;
+   left: 0;
+   right: 0;
+}
+
+.menu__droplist a{
+   display: block;
+   height: 20px;
+   color: white;
+   line-height: 20px;
+}
+
+.menu__button:hover .menu__dropdown{
+   display: block;
+   top:100%;
+   margin_top: 1px;
+}*/
+
+
+.menu__list{
+   position: absolute;
+   display: block;
+   text-align: center;
+   left: 0;
+   right: 0;
+}
+.menu__button{
+   display: block;
+   list-style: none;
+   line-height: 20px;
+}
+
+.menu__button--hover{
+   display: none;
+}
+
+.menu__list:hover .menu__button{
+   display: block;
+}
+
+.menu__link{
+   display: block;
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+}

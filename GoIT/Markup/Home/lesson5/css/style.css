@@ -73,7 +73,7 @@ body {
     bottom: -1px;
     left: -1px;
     width: 1px;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#64a8e3), to(#4299d2));
+ _   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#64a8e3), to(#4299d2));
     background-image: -webkit-linear-gradient(#64a8e3, #4299d2);
     background-image: -moz-linear-gradient(#64a8e3, #4299d2);
     background-image: -o-linear-gradient(#64a8e3, #4299d2);
