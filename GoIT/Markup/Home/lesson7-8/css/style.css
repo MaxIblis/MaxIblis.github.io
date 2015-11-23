@@ -1,0 +1,59 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+@font-face {
+       font-family: 'league_gothicregular';
+       src: url('../fonts/leaguegothic-regular-webfont.eot');
+       src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+            url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+            url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+       font-weight: normal;
+       font-style: normal;
+
+}
+
+.wrapper{
+   font-family: 'league_gothicregular' Arial sans-serif;
+}
+
+.header{
+   position: relative;
+   height: 515px;
+   background: url(../img/header.png) 0 0 no-repeat;
+
+}
+
+.header__logo{
+   width: 50%;
+   margin: auto;
+   position: absolute;
+   top: 70px;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}
+
+.header__text{
+   text-align: center;
+}
+
+.header__textpart1{
+   line-height: 37px;
+   font-size: 37px;
+   color: white;
+   text-shadow: 0px 1px 1px black;
+}
+
+.header__textpart2{
+   line-height: 37px;
+   font-size: 37px;
+   padding-left: 0;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #34263b;
+   background-image: -webkit-linear-gradient(#745083, #34263b);
+   background-image: -o-linear-gradient(transparent, transparent);
+}
