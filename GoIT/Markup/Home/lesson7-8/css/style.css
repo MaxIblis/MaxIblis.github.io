@@ -27,7 +27,6 @@
 }
 
 .header__logo{
-   width: 50%;
    margin: auto;
    position: absolute;
    top: 70px;
@@ -60,61 +59,28 @@
 
 .menu{
    position: absolute;
-   width: 50%;
-   margin: auto;
    top: 70px;
    left: 0;
    bottom: 0;
    right: 0;
 }
 
-/*.menu__button{
-   position: relative;
-   list-style: none;
-   text-align: center;
-
-}
-
-.menu__button a{
-   display: block;
-   height: 20px;
-   color: white;
-   line-height: 20px;
-}
-
-.menu__dropdown{
-   display:none;
-   list-style: none;
-   position: absolute;
-   left: 0;
-   right: 0;
-}
-
-.menu__droplist a{
-   display: block;
-   height: 20px;
-   color: white;
-   line-height: 20px;
-}
-
-.menu__button:hover .menu__dropdown{
-   display: block;
-   top:100%;
-   margin_top: 1px;
-}*/
-
-
 .menu__list{
-   position: absolute;
    display: block;
+   width: 244px;
    text-align: center;
-   left: 0;
-   right: 0;
+   margin: 0 auto;
+   background: rgba(72, 59, 79, 0.8);
+   border: 1px solid black;
+   border-radius: 7px;
 }
 .menu__button{
    display: block;
    list-style: none;
-   line-height: 20px;
+   line-height: 31px;
+   border-top: 1px solid #503d58;
+   border-bottom: 1px solid #36283e;
+
 }
 
 .menu__button--hover{
