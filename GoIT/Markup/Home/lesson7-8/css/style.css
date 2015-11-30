@@ -24,6 +24,7 @@
    height: 515px;
    background: url(../img/header.png) 0 0 no-repeat;
    background-position: right -50px bottom 0px;
+   clear: both;
 }
 
 .header__logo{
@@ -63,6 +64,7 @@
    left: 0;
    bottom: 0;
    right: 0;
+   clear: both;
 }
 
 .menu__list{
@@ -141,4 +143,8 @@
    color: white;
    font-size: 24px;
    text-shadow: 0px 0px 6px #FFFFFF;
+}
+
+.advertisement__button{
+   float: left;
 }
