@@ -1,3 +1,5 @@
+alert ('Part1');
+
 var a = +prompt ('Введите число');
 var b = +prompt ('Введите степень');
 
@@ -14,6 +16,8 @@ var finalResult = pow (a, b);
 
 console.log (finalResult);
 
+alert ('Part2');
+
 var arr = [];
 
 for (var i = 0; i < 5; i++) {
@@ -23,7 +27,7 @@ for (var i = 0; i < 5; i++) {
 var name = prompt ('Введите Ваше имя');
 var flag = false;
 
-for (var i = 0; i < array.length; i++) {
+for (var i = 0; i < arr.length; i++) {
    if (arr[i] === name){
       flag = true;
    }
