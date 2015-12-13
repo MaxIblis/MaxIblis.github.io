@@ -1,0 +1,12 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 800px;
+}
+
+ol{
+	margin-left: 20px;
+}
