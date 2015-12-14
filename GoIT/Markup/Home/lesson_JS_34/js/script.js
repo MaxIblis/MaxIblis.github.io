@@ -24,15 +24,15 @@ var create = {
    generateQuestions: function(questionsAmount, answersAmount) {
 
    for (var i = 0; i < questionsAmount; i++) {
-   var h2 = this.createElement('h2','', '',"Вопрос №" + (i + 1));
+   var h4 = this.createElement('h4','', '',"Вопрос №" + (i + 1));
 
    for (var j = 0; j < answersAmount; j++) {
    var label = this.createElement('label', '','','Вариант ответа №' + (j + 1));
    var checkbox = this.createElement('input', '', 'checkbox', '');
    label.insertAdjacentElement('afterBegin', checkbox);
-   h2.appendChild(label);
+   h4.appendChild(label);
    }
-   form.appendChild(h2);
+   form.appendChild(h4);
    form.appendChild(input);
 }
 
