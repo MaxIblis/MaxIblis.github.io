@@ -12,7 +12,10 @@ var create = {
       element.innerHTML = content;
 
       if (tagName === 'input'){
-         element.setAttribute('type', inputType);
+       element.setAttribute('type', inputType);
+       element.setAttribute('value', content);
+      }else{
+       element.innerHTML = content;
       }
    return element;
    },
@@ -28,10 +31,7 @@ var create = {
   //     // });
 
       var h2 = this.createElement('h2','', '',"Вопрос №" + (i + 1));
-        // tagName: 'h2',
-        // content: 'Вопрос №' + (i + 1),
-        // parentElement: form
-      // );
+
 
       form.appendChild(h2);
 
@@ -49,14 +49,13 @@ var create = {
   //       });
 
   //       label.insertAdjacentElement('afterBegin', checkbox);
-  //     }
+      };
 
   //   };
 
-  // }
+  }
 }
 var head = create.createElement('h3', 'h3', '', 'Тест по програмированнию');
-
 var form = create.createElement('form', '','','')
 var input = create.createElement('input', 'button', 'submit', 'Проверить мои результаты');
 
