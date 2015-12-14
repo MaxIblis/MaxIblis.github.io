@@ -41,11 +41,11 @@ var create = {
 }
 
 var head = create.createElement('h5', 'h5', '', 'Тест по програмированнию');
-var div_form = create.createElement('div', 'form-group', '', '');
+// var div_form = create.createElement('div', 'form-group', '', '');
 var form = create.createElement('form','','','');
 var input = create.createElement('input', 'btn btn-default btn_my', 'submit', 'Проверить мои результаты');
 
 create.generateQuestions(3, 3);
 wrapper.appendChild(head);
-wrapper.appendChild(div_form);
-div_form.appendChild(form);
+// wrapper.appendChild(div_form);
+wrapper.appendChild(form);
