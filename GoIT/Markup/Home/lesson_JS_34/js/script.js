@@ -24,7 +24,7 @@ var create = {
    generateQuestions: function(questionsAmount, answersAmount) {
 
    for (var i = 0; i < questionsAmount; i++) {
-   var p = this.createElement('p','', '',(i + 1) + '.' + "Вопрос №" + (i + 1));
+   var p = this.createElement('p','', '',(i + 1) + '.' + ' ' + "Вопрос №" + (i + 1));
 
    for (var j = 0; j < answersAmount; j++) {
    var label = this.createElement('label','checkbox','','Вариант ответа №' + (j + 1));
@@ -33,19 +33,18 @@ var create = {
    p.appendChild(label);
    }
    form.appendChild(p);
-   form.appendChild(input);
+   
 }
 
 }
 
 }
 
-var head = create.createElement('h5', 'h5', '', 'Тест по програмированнию');
-// var div_form = create.createElement('div', 'form-group', '', '');
+var head = create.createElement('p', 'head', '', 'Тест по програмированнию');
 var form = create.createElement('form','','','');
 var input = create.createElement('input', 'btn btn-default btn_my', 'submit', 'Проверить мои результаты');
 
 create.generateQuestions(3, 3);
 wrapper.appendChild(head);
-// wrapper.appendChild(div_form);
 wrapper.appendChild(form);
+wrapper.appendChild(input);

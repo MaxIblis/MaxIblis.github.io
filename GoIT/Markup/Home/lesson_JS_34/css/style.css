@@ -5,31 +5,44 @@
 	font-weight: 600;
 }
 
-
 .wrapper{
-	width: 800px;
+	position: relative;
+	width: 600px;
+	height: 500px;
 	margin: 0 auto;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 }
 
- h5 {
+form p{
+	margin-left: 50px;
+}
+
+.head {
 	text-align: center;
 	font-weight: 600;
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
+.checkbox{
+	margin-left: 40px;
+	font-size: 12px;
+}
 
 input{
 	margin: 4px 5px 4px 0;
 }
 
-form .btn_my{
+.wrapper .btn_my{
 	position: absolute;
-	width: 240px;
+	width: 300px;
 	height: 40px;
 	background-color: #cfe2f3;
-	margin: 0;
-	border: 1px solid black;
+	border: 2px solid black;
 	border-radius: 1px;
 	right: 0;
    left: 0;
-   margin: 0 auto;
+   margin: 30px auto;
 }
