@@ -6,7 +6,7 @@ var body = document.querySelector('body');
 var create = {
    createElement: function(tagName, className, type, content){
       var element = document.createElement(tagName);
-      
+
       element.className = className;
       inputType = type;
       element.innerHTML = content;
@@ -27,7 +27,7 @@ var create = {
   //     //   parentElement: form
   //     // });
 
-      var h2 = this.createElement('h2','', '',Вопрос № + (i + 1));
+      var h2 = this.createElement('h2','', '',"Вопрос №" + (i + 1));
         // tagName: 'h2',
         // content: 'Вопрос №' + (i + 1),
         // parentElement: form
@@ -56,12 +56,11 @@ var create = {
   // }
 }
 var head = create.createElement('h3', 'h3', '', 'Тест по програмированнию');
-var input = create.createElement('input', 'button', 'submit', 'Проверить мои результаты');
+
 var form = create.createElement('form', '','','')
+var input = create.createElement('input', 'button', 'submit', 'Проверить мои результаты');
 
 // create.generateQuestions(3, 3);
-
-
 wrapper.appendChild(head);
 wrapper.appendChild(form);
 form.appendChild(input);
