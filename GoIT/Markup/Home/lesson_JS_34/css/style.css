@@ -5,8 +5,10 @@
 	font-weight: 600;
 }
 
+
 .wrapper{
 	width: 800px;
+	margin: 0 auto;
 }
 
 .h5{
@@ -26,6 +28,10 @@
 .form-group{
 	position: relative;
 	padding-left: 20px;
+}
+
+input{
+	margin: 4px 5px 4px 0;
 }
 
 form .btn_my{
