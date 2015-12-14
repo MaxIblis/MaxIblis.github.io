@@ -22,44 +22,25 @@ var create = {
 
    generateQuestions: function(questionsAmount, answersAmount) {
 
-    for (var i = 0; i < questionsAmount; i++) {
+   for (var i = 0; i < questionsAmount; i++) {
+   var h2 = this.createElement('h2','', '',"Вопрос №" + (i + 1));
+    };
 
-  //     // this.createElement({
-  //     //   tagName: 'h2',
-  //     //   content: 'Вопрос №' + (i + 1),
-  //     //   parentElement: form
-  //     // });
+   for (var j = 0; j < answersAmount; j++) {
+   var label = this.createElement('label', '','','Вариант ответа №' + (j + 1));
+   };
 
-      var h2 = this.createElement('h2','', '',"Вопрос №" + (i + 1));
+   var checkbox = this.createElement('input', '', 'checkbox', '');
 
-
-      form.appendChild(h2);
-
-  //     for (var j = 0; j < answersAmount; j++) {
-
-  //       var label = this.createElement({
-  //         tagName: 'label',
-  //         content: 'Вариант ответа №' + (j + 1),
-  //         parentElement: form
-  //       });
-
-  //       var checkbox = this.createElement({
-  //         tagName: 'input',
-  //         inputType: 'checkbox'
-  //       });
-
-  //       label.insertAdjacentElement('afterBegin', checkbox);
-      };
-
-  //   };
-
-  }
+   label.insertAdjacentElement('afterBegin', checkbox);
 }
+
 var head = create.createElement('h3', 'h3', '', 'Тест по програмированнию');
 var form = create.createElement('form', '','','')
 var input = create.createElement('input', 'button', 'submit', 'Проверить мои результаты');
 
-// create.generateQuestions(3, 3);
+create.generateQuestions(3, 3);
 wrapper.appendChild(head);
 wrapper.appendChild(form);
 form.appendChild(input);
+form.appendChild(h2);
