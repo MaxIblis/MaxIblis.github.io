@@ -16,7 +16,8 @@ var create = {
        element.setAttribute('value', content);
       }else{
        element.innerHTML = content;
-      }
+    }
+
    return element;
    },
 
@@ -24,25 +25,25 @@ var create = {
 
    for (var i = 0; i < questionsAmount; i++) {
    var h2 = this.createElement('h2','', '',"Вопрос №" + (i + 1));
-    };
-    form.appendChild(h2);
+
    for (var j = 0; j < answersAmount; j++) {
    var label = this.createElement('label', '','','Вариант ответа №' + (j + 1));
-   };
-   form.appendChild(label);
-   create.generateQuestions(3, 3);
-
    var checkbox = this.createElement('input', '', 'checkbox', '');
-
    label.insertAdjacentElement('afterBegin', checkbox);
-},
+   h2.appendChild(label);
+   }
+   form.appendChild(h2);
+   form.appendChild(input);
+}
+
+}
+
 }
 
 var head = create.createElement('h3', 'h3', '', 'Тест по програмированнию');
-var form = create.createElement('form', '','','')
+var form = create.createElement('form','','','');
 var input = create.createElement('input', 'button', 'submit', 'Проверить мои результаты');
 
-
+create.generateQuestions(3, 3);
 wrapper.appendChild(head);
 wrapper.appendChild(form);
-form.appendChild(input);
