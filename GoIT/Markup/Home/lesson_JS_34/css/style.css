@@ -11,24 +11,11 @@
 	margin: 0 auto;
 }
 
-.h5{
+ h5 {
 	text-align: center;
 	font-weight: 600;
 }
 
-.label_my{
-/*	display: block;*/
-/*	padding-left: 15px;
-	margin-bottom: 0;
-	font-size: 12px;
-	line-height: 14px;
-	font-weight: 600;
-}
-*/
-.form-group{
-	position: relative;
-	padding-left: 20px;
-}
 
 input{
 	margin: 4px 5px 4px 0;

@@ -28,7 +28,7 @@ var create = {
 
    for (var j = 0; j < answersAmount; j++) {
    var label = this.createElement('label','checkbox','','Вариант ответа №' + (j + 1));
-   var checkbox = this.createElement('input', '', 'checkbox', '');
+   var checkbox = this.createElement('input', 'checkbox__new', 'checkbox', '');
    label.insertAdjacentElement('afterBegin', checkbox);
    p.appendChild(label);
    }
