@@ -24,15 +24,15 @@ var create = {
    generateQuestions: function(questionsAmount, answersAmount) {
 
    for (var i = 0; i < questionsAmount; i++) {
-   var h4 = this.createElement('h4','', '',"Вопрос №" + (i + 1));
+   var p = this.createElement('p','', '',(i + 1) + '.' + "Вопрос №" + (i + 1));
 
    for (var j = 0; j < answersAmount; j++) {
-   var label = this.createElement('label', '','','Вариант ответа №' + (j + 1));
+   var label = this.createElement('label','label_my','','Вариант ответа №' + (j + 1));
    var checkbox = this.createElement('input', '', 'checkbox', '');
    label.insertAdjacentElement('afterBegin', checkbox);
-   h4.appendChild(label);
+   p.appendChild(label);
    }
-   form.appendChild(h4);
+   form.appendChild(p);
    form.appendChild(input);
 }
 
@@ -40,10 +40,12 @@ var create = {
 
 }
 
-var head = create.createElement('h3', 'h3', '', 'Тест по програмированнию');
+var head = create.createElement('h5', 'h5', '', 'Тест по програмированнию');
+var div_form = create.createElement('div', 'form-group', '', '');
 var form = create.createElement('form','','','');
-var input = create.createElement('input', 'button', 'submit', 'Проверить мои результаты');
+var input = create.createElement('input', 'btn btn-default btn_my', 'submit', 'Проверить мои результаты');
 
 create.generateQuestions(3, 3);
 wrapper.appendChild(head);
-wrapper.appendChild(form);
+wrapper.appendChild(div_form);
+div_form.appendChild(form);

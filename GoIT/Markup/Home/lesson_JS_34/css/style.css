@@ -1,24 +1,42 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: sans-serif;
+	font-weight: 600;
 }
 
 .wrapper{
 	width: 800px;
 }
 
-h3{
+.h5{
 	text-align: center;
+	font-weight: 600;
 }
 
-h4{
+.label_my{
 	display: block;
+	padding-left: 15px;
+	margin-bottom: 0;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 600;
 }
 
-form{
-	clear: both;
+.form-group{
+	position: relative;
+	padding-left: 20px;
 }
 
-label{
-display: block;
+form .btn_my{
+	position: absolute;
+	width: 240px;
+	height: 40px;
+	background-color: #cfe2f3;
+	margin: 0;
+	border: 1px solid black;
+	border-radius: 1px;
+	right: 0;
+   left: 0;
+   margin: 0 auto;
 }
