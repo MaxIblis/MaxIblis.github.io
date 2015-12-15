@@ -31,8 +31,9 @@ form p{
 	font-size: 12px;
 }
 
-input{
-	margin: 4px 5px 4px 0;
+.checkbox input[type=checkbox]{
+	margin: 1px 0 0;
+	line-height: normal;
 }
 
 .wrapper .btn_my{
