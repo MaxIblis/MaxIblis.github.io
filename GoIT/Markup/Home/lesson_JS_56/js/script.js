@@ -8,6 +8,7 @@ function create (newElement) {
 var divTimeTable = create(divTimeTable);
 var divStart = create(divStart);
 var divSplit = create(divSplit);
+var splitTime = document.createElement('ul');
 
 var timeTable = document.createElement('div');
 divTimeTable.appendChild(timeTable);
@@ -120,15 +121,16 @@ function resetCount(){
 	seconds = 0,
 	minutes = 0,
 	hours = 0;
-   var timePause = document.getElementsByTagName('li');
+   var timePause = document.getElementById('ul');
    // divSplit.removeChild(timePause);
 	timePause.innerHTML = "";
    
 }
 
+
 function splitCounter(){
-   var splitTime = document.createElement('ul');
-   divSplit.appendChild(splitTime);
+    divSplit.appendChild(splitTime);
+   splitTime.setAttribute('id', 'ul');
    var timePause = document.createElement('li');
    splitTime.appendChild(timePause);
    timePause.classList.add('times', 'col-md-2', 'col-md-offset-5', 'text-center');
