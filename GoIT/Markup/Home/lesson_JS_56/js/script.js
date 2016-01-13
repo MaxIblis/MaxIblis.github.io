@@ -7,7 +7,7 @@ function create (newElement) {
 
 var divTimeTable = create(divTimeTable);
 var divStart = create(divStart);
-// var divSplit = create(divSplit);
+var divSplit = create(divSplit);
 
 var timeTable = document.createElement('div');
 divTimeTable.appendChild(timeTable);
@@ -29,7 +29,15 @@ buttonReset.classList.add('btn', 'btn-success', 'col-md-2');
 buttonReset.setAttribute('type', 'button');
 buttonReset.innerHTML = 'Reset';
 buttonReset.style.fontSize = "28px";
-// buttonReset.addEventListener("click", resetCount);
+buttonReset.addEventListener("click", resetCount);
+
+var buttonSplit = document.createElement('button');
+divSplit.appendChild(buttonSplit);
+buttonSplit.classList.add('btn', 'btn-warning', 'col-md-4', 'col-md-offset-4');
+buttonSplit.setAttribute('type', 'button');
+buttonSplit.innerHTML = 'Split';
+buttonSplit.style.fontSize = "28px";
+buttonSplit.addEventListener('click', splitCounter);
 
 var zero = new Date (0, 0),
 seconds = 0,
@@ -62,10 +70,21 @@ function counter(){
       else {
             millisecondsValue = milliseconds;
          }
-
-      secondsValue = seconds;
-      minutesValue = minutes;
-      hoursValue = hours;
+      if (seconds < 10){
+         secondsValue = '0' + seconds;
+      }   else{
+         secondsValue = seconds;
+      }
+      if (minutes < 10){
+         minutesValue = '0' + minutes;
+      } else{
+         minutesValue = minutes;
+      }
+      if (hours < 10){
+         hoursValue = '0' + hours;
+      } else {
+         hoursValue = hours;
+      }
 
       time = hoursValue + ":" + minutesValue + ":" + secondsValue + ":" + millisecondsValue;
       timeTable.innerHTML = time;
@@ -77,5 +96,32 @@ function startCount(){
    buttonStart.innerHTML = 'Pause';
    timer = setInterval (counter, 4);
    buttonStart.removeEventListener("click", startCount);
-   // button.addEventListener("click", pauseCount);
+   buttonStart.addEventListener("click", pauseCount);
+}
+
+function pauseCount() {
+   buttonStart.classList.remove('btn-danger');
+   buttonStart.classList.add('btn-success');
+   buttonStart.innerHTML = 'Continue';
+   clearInterval(timer);
+   buttonStart.removeEventListener("click", pauseCount);
+   buttonStart.addEventListener("click", startCount);
+}
+
+function resetCount(){
+   buttonStart.classList.remove('btn-danger');
+   buttonStart.classList.add('btn-success');
+   buttonStart.innerHTML = 'Start';
+   clearInterval(timer);
+   timeTable.innerHTML = '00:00:00:000';
+   buttonStart.removeEventListener("click", pauseCount);
+   buttonStart.addEventListener("click", startCount);
+}
+
+function splitCounter(){
+   var timePause = document.createElement('p');
+   divSplit.appendChild(timePause);
+   timePause.classList.add('times', 'col-md-2', 'col-md-offset-5', 'text-center');
+   var i = 0;
+   timePause.innerHTML = timeTable.innerHTML;
 }
