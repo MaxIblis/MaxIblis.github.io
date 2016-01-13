@@ -116,12 +116,13 @@ function resetCount(){
    timeTable.innerHTML = '00:00:00:000';
    buttonStart.removeEventListener("click", pauseCount);
    buttonStart.addEventListener("click", startCount);
-   var timePause = document.querySelector('p');
-   divSplit.removeChild(timePause);
    zero = new Date(0, 0);
 	seconds = 0;
 	minutes = 0;
 	hours = 0;
+   var timePause = document.querySelector('p');
+   divSplit.removeChild(timePause);
+   
 }
 
 function splitCounter(){
