@@ -116,19 +116,23 @@ function resetCount(){
    timeTable.innerHTML = '00:00:00:000';
    buttonStart.removeEventListener("click", pauseCount);
    buttonStart.addEventListener("click", startCount);
-   zero = new Date(0, 0);
-	seconds = 0;
-	minutes = 0;
+   zero = new Date(0, 0),
+	seconds = 0,
+	minutes = 0,
 	hours = 0;
-   var timePause = document.querySelector('p');
-   divSplit.removeChild(timePause);
+   var timePause = document.getElementsByTagName('li');
+   // divSplit.removeChild(timePause);
+	timePause.innerHTML = "";
    
 }
 
 function splitCounter(){
-   var timePause = document.createElement('p');
-   divSplit.appendChild(timePause);
+   var splitTime = document.createElement('ul');
+   divSplit.appendChild(splitTime);
+   var timePause = document.createElement('li');
+   splitTime.appendChild(timePause);
    timePause.classList.add('times', 'col-md-2', 'col-md-offset-5', 'text-center');
+   timePause.style.listStyle = "none";
    var i = 0;
    timePause.innerHTML = timeTable.innerHTML;
 }
