@@ -13,8 +13,8 @@ var splitTime = document.createElement('ul');
 var timeTable = document.createElement('div');
 divTimeTable.appendChild(timeTable);
 timeTable.innerHTML = '00:00:00:000';
-timeTable.style.fontSize = "48px";
-timeTable.classList.add('col-md-2', 'col-md-offset-5', 'text-center');
+timeTable.style.fontSize = "40px";
+timeTable.classList.add('col-md-1', 'col-md-offset-5', 'text-center');
 
 var buttonStart = document.createElement('button');
 divStart.appendChild(buttonStart);
@@ -124,7 +124,7 @@ function resetCount(){
    var timePause = document.getElementById('ul');
    // divSplit.removeChild(timePause);
 	timePause.innerHTML = "";
-   
+
 }
 
 
