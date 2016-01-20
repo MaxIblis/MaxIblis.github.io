@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	width: 500px;
+	height: 230px;
+	border: 1px solid black;
+	border-radius: 2px;
+	margin: auto;
+}
+
+.buttons{
+
+}
+
+.wrapper li{
+	list-style: none;
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+}
+
+.wrapper li a{
+	text-decoration: none;
+	line-height: 40px;
+
+}
