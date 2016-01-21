@@ -13,10 +13,17 @@
 }
 
 .buttons{
-	background-color: #11ffff;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(17,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(17,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(17,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(17,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(17,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(17,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#11ffff', GradientType=0 );
 }
 
-.wrapper li{
+.menu{
 	list-style: none;
 	display: inline-block;
 	border: 1px solid grey;
@@ -33,30 +40,49 @@
 	text-align: center;
 	line-height: 40px;
 	color: black;
+	background: rgba(18,168,28,1);
+	background: -moz-linear-gradient(top, rgba(18,168,28,1) 0%, rgba(17,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(18,168,28,1)), color-stop(100%, rgba(17,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(18,168,28,1) 0%, rgba(17,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(18,168,28,1) 0%, rgba(17,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(18,168,28,1) 0%, rgba(17,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(18,168,28,1) 0%, rgba(17,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12a81c', endColorstr='#11ffff', GradientType=0 );
+}
+
+.wrapper li a.is-active{
+	display: block;
+	background: #75e07c;
+	font-style: italic;
+}
+
+.wrapper li a:hover{
+	display: block;
+	font-style: normal;
+	background: #75e07c;
+	opacity: 0.5;
 }
 
 .text{
 	display: block;
 	width: auto;
-	height: auto;
-	margin-bottom: 3px;
-	margin: 10px;
+	height: 170px;
+	margin: 5px;
+	margin-top: 0;
+	border-radius: 3px;
+	background: #75e07c;
 }
 
-.text__active{
-	background-color: #11ffff;
+#f_text{
+	display: block;
+
 }
 
 #s_text{
 	display: none;
-	width: auto;
-	height: auto;
-	margin-bottom: 3px;
+
 }
 
 #tr_text{
 	display: none;
-	width: auto;
-	height: auto;
-	margin-bottom: 3px;
 }
