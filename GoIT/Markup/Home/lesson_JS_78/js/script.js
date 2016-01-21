@@ -10,6 +10,8 @@ $links.on('click', function(e){
 	var $act = $(this).addClass("is-active");
 	$active = $(this);
 	var $click = $active.attr('rel');
+	console.log($click);
+
 })
 
 
