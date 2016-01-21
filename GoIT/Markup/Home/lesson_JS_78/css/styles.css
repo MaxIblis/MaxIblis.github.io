@@ -9,21 +9,54 @@
 	border: 1px solid black;
 	border-radius: 2px;
 	margin: auto;
+	background-color: grey;
 }
 
 .buttons{
-
+	background-color: #11ffff;
 }
 
 .wrapper li{
 	list-style: none;
 	display: inline-block;
-	width: 100px;
+	border: 1px solid grey;
+	border-bottom: none;
+	width: 120px;
 	height: 40px;
+	margin: 5px;
+	margin-bottom: 0;
 }
 
 .wrapper li a{
+	display: block;
 	text-decoration: none;
+	text-align: center;
 	line-height: 40px;
+	color: black;
+}
 
+.text{
+	display: block;
+	width: auto;
+	height: auto;
+	margin-bottom: 3px;
+	margin: 10px;
+}
+
+.text__active{
+	background-color: #11ffff;
+}
+
+#s_text{
+	display: none;
+	width: auto;
+	height: auto;
+	margin-bottom: 3px;
+}
+
+#tr_text{
+	display: none;
+	width: auto;
+	height: auto;
+	margin-bottom: 3px;
 }
