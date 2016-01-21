@@ -86,3 +86,8 @@
 #tr_text{
 	display: none;
 }
+
+p{
+	display: block;
+	padding: 5px 0 0 10px;
+}
