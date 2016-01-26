@@ -64,7 +64,7 @@
 }
 
 .text{
-	display: block;
+	display: none;
 	width: auto;
 	height: 170px;
 	margin: 6px;
@@ -73,21 +73,64 @@
 	background: #75e07c;
 }
 
-#f_text{
+.text__shown{
 	display: block;
-
-}
-
-#s_text{
-	display: none;
-
-}
-
-#tr_text{
-	display: none;
 }
 
 p{
 	display: block;
 	padding: 5px 0 0 10px;
 }
+
+.wrapper2{
+	width: 550px;
+	margin: auto;
+}
+
+.form{
+	width: 550px;
+	height: 90px;
+	margin-top: 30px; 
+}
+
+.input{
+	margin: auto;
+}
+
+fieldset{
+	background: #75e07c
+}
+
+.form fieldset {
+  position: relative;
+}
+
+.form fieldset label{
+	display: inline-block;
+	width: 80px;
+	margin: 5px;
+}
+
+.form fieldset .input{
+	display: inline-block;
+	margin: auto;
+	background: rgba(17,255,255,1);
+}
+
+.info{
+	display: inline-block;
+	height: 30px;
+	padding: 0 5px;
+	margin: auto;
+	background: linear-gradient(to bottom, rgba(18,168,28,1) 0%, rgba(17,255,255,1) 100%);
+	cursor: pointer;
+}
+
+.show_hint{
+	display: inline-block;
+	background: grey;
+	font-size: 14px;
+	vertical-align: middle;
+	padding: 2px 5px;
+	border: 1px solid rgba(17,255,255,1);
+
