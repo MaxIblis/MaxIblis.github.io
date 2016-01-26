@@ -16,7 +16,7 @@ $(function () {
 			$divActive = $div;
 		}
 	);
-
+	
 	$('input').hover(showText, hideText);
 
 	function showText(){
@@ -28,6 +28,18 @@ $(function () {
 	function hideText(){
 			$(this).parent().find('.show_hint').remove();
 	};
+
+	$('input').mouseover( 
+		function(){
+			var $hint = $(this).attr('title');
+			$(this).attr('title', "");
+			$(this).on('mouseout',
+				function(){
+				$(this).attr('title', $hint);
+				});
+		});
+
+	
 
 	$('.info').on('click', 
 		function(){
