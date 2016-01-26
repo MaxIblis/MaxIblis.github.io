@@ -43,17 +43,12 @@ $(function () {
 
 	$('.info').on('click', 
 		function(){
-			$('.form input').each(showText);
+			$('.form input').each(function(){ 
+				var ctx = this; 
+				showText.call(ctx);  
+				setTimeout(function(){ 
+					hideText.call(ctx)}, 1500); });
 		});
-
-	// function allHints(){
-	// 	$('.form input').each(showText);
-	// };
-	// function allHintsHide(){
-	// 	$('.form input').each(hideText);
-	// };
-
-	// $('.info').toggle(allHints, allHintsHide);
 
 })
 
