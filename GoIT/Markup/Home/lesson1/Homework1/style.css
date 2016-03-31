@@ -1,6 +1,7 @@
-margin: 0;
-padding: 0;
-
+*{
+	margin: 0;
+	padding: 0;
+}
 .name {
 width: 514px;
 height: 752px;
