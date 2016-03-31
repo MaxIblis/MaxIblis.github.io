@@ -1,9 +1,36 @@
+/*margin: 0;
+padding: 0;*/
+
+.name {
+width: 514px;
+height: 752px;
+}
+
+h1 {
+	text-align: center;
+	 margin-top:58px;
+}
+
+.photo {
+	text-align: center;
+}
+
+ul {
+	font-family:Times;
+	 font-size:14px;
+	 margin-left:40px;
+	 margin-top:20px;
+}
 
 .stylish {
 	margin-top: 20px;
 	font-family:Times;
 	font-size:14px;
 	margin-left:56px;
+}
+
+.stylish p {
+	padding-bottom: 15px;
 }
 
 #mini {
